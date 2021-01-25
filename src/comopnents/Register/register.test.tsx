@@ -10,7 +10,7 @@ describe('<Register>', function () {
         const wrapper = shallow(<Register />);
         wrapper.find('input').at(0);
         wrapper.simulate('change');
-        wrapper.setState({firstname: "Dipen"})
+        wrapper.setState({ firstname: "Dipen" })
         expect(wrapper.state('firstname')).toEqual('Dipen');
     })
 
@@ -18,26 +18,17 @@ describe('<Register>', function () {
         const wrapper = shallow(<Register />);
         wrapper.find('input').at(1);
         wrapper.simulate('change');
-        wrapper.setState({lastname: "Dipen"})
+        wrapper.setState({ lastname: "Dipen" })
         expect(wrapper.state('lastname')).toEqual('Dipen');
     })
-
-    it('Should capture email correctly onChange and change the props accordingly', () => {
-        const wrapper = shallow(<Register />);
-        wrapper.find('input').at(2);
-        wrapper.setState({email: "Dipen@gmail,com"})
-        wrapper.simulate('change');
-        expect(wrapper.find('input').at(2).props().value).toEqual('Dipen@gmail.com');
-    })
-
     it('Should capture email correctly onChange and change the state accordingly', () => {
         const wrapper = shallow(<Register />);
         wrapper.find('input').at(2);
         wrapper.simulate('change');
-        wrapper.setState({email: "Dipen@gmail,com"})
+        wrapper.setState({ email: "Dipen@gmail,com" })
         expect(wrapper.state('email')).toEqual('Dipen@gmail,com');
     })
-    
+
     it('Should call alert() when submit button is clicked', () => {
         const state = {
             firstname: 'Dipen', lastname: 'Dipen',
