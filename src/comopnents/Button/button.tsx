@@ -1,4 +1,4 @@
-import react, { Component, useState } from 'react';
+import react, { useState } from 'react';
 
 export const Button = () => {
     const [show, setShow] = useState(true);

@@ -13,7 +13,6 @@ describe('<Register>', function () {
         wrapper.setState({ firstname: "Dipen" })
         expect(wrapper.state('firstname')).toEqual('Dipen');
     })
-
     it('Should capture lastname correctly onChange', () => {
         const wrapper = shallow(<Register />);
         wrapper.find('input').at(1);
