@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component tests should match the snapshot 1`] = `
+<div
+  className="container-fluid box mt-5"
+>
+  <div
+    className="loginbox shadow p-5"
+  >
+    <form
+      className="p-2 mt-5"
+    >
+      <div
+        className="mb-3"
+      >
+        <input
+          className="text-center"
+          id="email"
+          name="email"
+          onChange={[Function]}
+          placeholder="Email/Username"
+          type="text"
+        />
+      </div>
+      <div
+        className="mb-3 mt-4"
+      >
+        <input
+          className="text-center"
+          id="password"
+          name="password"
+          onChange={[Function]}
+          placeholder="Password"
+          type="password"
+        />
+      </div>
+      <div
+        className="Log-button"
+      >
+        <button
+          className="btn"
+          style={
+            Object {
+              "width": "10rem",
+            }
+          }
+        >
+          LOGIN
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

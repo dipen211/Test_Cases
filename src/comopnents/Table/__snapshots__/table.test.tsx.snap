@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component tests should match the snapshot 1`] = `
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <input
+        className="prompt"
+        onChange={[Function]}
+        placeholder="Add item..."
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      disabled={true}
+      type="submit"
+    >
+      Add item
+    </button>
+  </form>
+  <table
+    style={
+      Object {
+        "margin": "auto",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th>
+          Items
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</Fragment>
+`;

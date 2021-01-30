@@ -19,11 +19,10 @@ class Register extends React.Component<{}, User> {
     }
 
     handleChange(event: any) {
-        const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
         this.setState(
             {
                 ...this.state,
-                [event.target.name]: value,
+                [event.target.name]: event.target.value,
             }
         );
     }

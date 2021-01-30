@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Increment({ onCountChange = () => { } }) {
+export default function Increment() {
     const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        onCountChange();
-    }, [count]);
 
     return (
         <div>

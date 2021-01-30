@@ -1,9 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button should checked when checkbox is clicked 1`] = `ShallowWrapper {}`;
-
-exports[`Button should hide text when button is clicked 1`] = `ShallowWrapper {}`;
-
-exports[`Button should increment number when button is clicked 1`] = `ShallowWrapper {}`;
-
-exports[`Button should show text 1`] = `ShallowWrapper {}`;
+exports[`Button should match the snapshot 1`] = `
+<div>
+  <button
+    className="buttonText"
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <div>
+    Text
+  </div>
+  <button
+    className="buttonAdd"
+    onClick={[Function]}
+  >
+    Add
+  </button>
+  <h2>
+    0
+  </h2>
+  <input
+    checked={false}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  Off
+</div>
+`;

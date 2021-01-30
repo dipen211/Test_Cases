@@ -2,12 +2,16 @@ import React from 'react';
 import Enzyme, { mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import Table from '../../comopnents/Table/table';
+import { mountToJson } from 'enzyme-to-json';
 
 Enzyme.configure({ adapter: new Adapter() });
 describe('Table component tests', () => {
-    let wrapper: Enzyme.ShallowWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+    let wrapper: any;
     beforeEach(() => {
         wrapper = shallow(<Table />);
+    });
+    it('should match the snapshot', () => {
+        expect(mountToJson(wrapper)).toMatchSnapshot();
     });
 
     it('should have the <th> Items', () => {
